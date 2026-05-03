@@ -1,0 +1,32 @@
+'' Copyright (c) 2024 ABC
+'' All Rights Reserved Worldwide
+'' Unauthorized Duplication or Distribution Prohibited
+'' *****************************************************************************
+'' FILENAME: adduser8
+'' *****************************************************************************
+'' ABOUT THIS FILE 
+
+'' AUTHOR IDENTITY:
+
+'' Initials		Name/Company
+'' --------		-----------------------------------------
+'' rw 			Rick Wagonner ABC INC
+
+'' REVISION HISTORY:
+
+'' Date/Initials	Comments
+'' ---------		-------------------------------
+
+'' 01/10/2024  rw	Created for LoanApp 3.1
+
+
+
+''SCRIPT
+
+
+''Valid input
+AddUser "dsmith", "password", "Peter", "Smith", "ABC", "(416)456-0000", "jsmith@sample.com", "Loan Officer" 
+
+''Invalid input - missing username
+AddUser "", "password", "Ron", "Smith", "ABC", "(416)456-0200", "rsmith@sample.com", "Loan Officer" 
+
