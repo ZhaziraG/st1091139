@@ -25,11 +25,13 @@
 
 
 ''Valid input
-AddUser "dsmith", "password", "Peter", "Smith", "ABC", "(416)456-0000", "jsmith@sample.com", "Loan Officer" 
-
+AddUser "dsmith", "password", "Peter", "Smith", "ABC", "(416)456-0000", "jsmith@sample.com", 
 ''Invalid input - missing username
-AddUser "", "password", "Ron", "Smith", "ABC", "(416)456-0200", "rsmith@sample.com", "Loan Officer" 
+AddUser "", "password", "Ron", "Smith", "ABC", "(416)456-0200", "rsmith@sample.com",  
 
 ''Invalid input - missing password
-AddUser "rnmith", "", "Ron", "Smith", "ABC", "416-456-0000", "rsmith@sample.com"
+AddUser "rnmith", "", "Ron", "Smith", "ABC", "416-456-0000", "rsmith@sample.com",
+
+''Invalid input - user already exists
+AddUser "dsmith", "password", "Peter", "Smith", "ABC", "416-456-0000", "jsmith@sample.com"
 
